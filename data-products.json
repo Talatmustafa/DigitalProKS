@@ -1,0 +1,47 @@
+
+[
+  {
+    "id": 1,
+    "name": "Social Media Business Kit",
+    "category": "Business",
+    "description": "A complete starter kit to build and manage your social media business.",
+    "price": 9,
+    "currency": "EUR",
+    "file": "social-media-business-kit.pdf",
+    "image": "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800",
+    "featured": true
+  },
+  {
+    "id": 2,
+    "name": "Instagram Design Pack",
+    "category": "Design",
+    "description": "20 creative Instagram design concepts for professional content.",
+    "price": 7,
+    "currency": "EUR",
+    "file": "instagram-design-pack-guide.pdf",
+    "image": "https://images.unsplash.com/photo-1611262588024-d12430b98920?w=800",
+    "featured": true
+  },
+  {
+    "id": 3,
+    "name": "AI Prompts for Business",
+    "category": "Artificial Intelligence",
+    "description": "Powerful AI prompts to improve marketing, productivity and business growth.",
+    "price": 5,
+    "currency": "EUR",
+    "file": "ai-prompts-for-business.pdf",
+    "image": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800",
+    "featured": true
+  },
+  {
+    "id": 4,
+    "name": "Complete Digital Bundle",
+    "category": "Bundle",
+    "description": "Get all four DigitalPro KS digital products in one complete package.",
+    "price": 15,
+    "currency": "EUR",
+    "file": "complete-digital-bundle.pdf",
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800",
+    "featured": true
+  }
+]

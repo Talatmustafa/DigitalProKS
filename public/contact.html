@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | DigitalPro KS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h2>DigitalPro KS</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main class="contact-page">
+    <section>
+        <p>WE ARE HERE TO HELP</p>
+        <h1>Contact Us</h1>
+        <p>Have a question about our digital products? Send us a message.</p>
+
+        <form id="contactForm">
+            <label for="name">Your Name</label>
+            <input id="name" type="text" placeholder="Enter your name" required>
+
+            <label for="email">Your Email</label>
+            <input id="email" type="email" placeholder="Enter your email" required>
+
+            <label for="message">Your Message</label>
+            <textarea id="message" placeholder="Write your message..." required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <p id="contactStatus"></p>
+    </section>
+</main>
+
+<footer>
+    <p>© 2026 DigitalPro KS. All rights reserved.</p>
+</footer>
+
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    document.getElementById("contactStatus").textContent =
+        "Thank you! The contact form is currently a demo.";
+});
+</script>
+
+</body>
+</html>

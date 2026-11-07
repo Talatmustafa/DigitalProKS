@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | DigitalPro KS</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+    <div class="admin-container">
+
+        <aside class="sidebar">
+            <h2>DigitalPro <span>KS</span></h2>
+
+            <p class="sidebar-label">ADMIN PANEL</p>
+
+            <nav>
+                <a href="#dashboard" class="active">Dashboard</a>
+                <a href="#products">Products</a>
+                <a href="#orders">Orders</a>
+            </nav>
+
+            <button id="logoutBtn" class="logout-btn">
+                Log Out
+            </button>
+        </aside>
+
+        <main class="main-content">
+
+            <header class="topbar">
+                <div>
+                    <h1>Admin Dashboard</h1>
+                    <p>Manage your DigitalPro KS store</p>
+                </div>
+
+                <span class="admin-badge">Administrator</span>
+            </header>
+
+            <!-- LOGIN -->
+            <section id="loginSection" class="login-section">
+                <div class="login-card">
+                    <h2>Admin Login</h2>
+                    <p>Sign in to manage your store.</p>
+
+                    <form id="loginForm">
+                        <label>Admin Password</label>
+
+                        <input
+                            type="password"
+                            id="adminPassword"
+                            placeholder="Enter your password"
+                            required
+                        >
+
+                        <button type="submit">Sign In</button>
+                        <p id="loginMessage"></p>
+                    </form>
+                </div>
+            </section>
+
+            <!-- DASHBOARD -->
+            <section id="dashboardSection" hidden>
+
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <p>Total Products</p>
+                        <h2 id="totalProducts">0</h2>
+                    </div>
+
+                    <div class="stat-card">
+                        <p>Total Orders</p>
+                        <h2 id="totalOrders">0</h2>
+                    </div>
+
+                    <div class="stat-card">
+                        <p>Pending Orders</p>
+                        <h2 id="pendingOrders">0</h2>
+                    </div>
+                </div>
+
+                <section id="products" class="dashboard-panel">
+                    <div class="panel-heading">
+                        <h2>Products</h2>
+                        <button id="addProductBtn">+ Add Product</button>
+                    </div>
+
+                    <div id="productList" class="product-list"></div>
+
+<div id="productFormContainer" hidden>
+    <h3 id="productFormTitle">Add Product</h3>
+
+    <form id="productForm">
+        <input type="hidden" id="productId">
+
+        <label>Product Name</label>
+        <input type="text" id="productName" required>
+
+        <label>Description</label>
+        <textarea id="productDescription" required></textarea>
+
+        <label>Category</label>
+        <input type="text" id="productCategory" required>
+
+        <label>Price (EUR)</label>
+        <input type="number" id="productPrice" min="0.01" step="0.01" required>
+
+        <label>PDF File Name</label>
+        <input type="text" id="productFile" placeholder="product.pdf" required>
+
+        <label>Image URL (HTTPS)</label>
+        <input type="url" id="productImage" placeholder="https://example.com/image.jpg">
+
+        <label>
+            <input type="checkbox" id="productFeatured">
+            Featured Product
+        </label>
+
+        <button type="submit">Save Product</button>
+        <button type="button" id="cancelProductBtn">Cancel</button>
+
+        <p id="productFormMessage"></p>
+    </form>
+</div>
+                </section>
+
+                <section id="orders" class="dashboard-panel">
+                    <h2>Recent Orders</h2>
+                    <div id="orderList"></div>
+                </section>
+
+            </section>
+
+        </main>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>

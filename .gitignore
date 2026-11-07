@@ -1,0 +1,14 @@
+
+node_modules/
+.env
+*.db
+*.db-shm
+*.db-wal
+
+private/downloads/*.pdf
+
+.DS_Store
+Thumbs.db
+
+.env.*
+!.env.example
